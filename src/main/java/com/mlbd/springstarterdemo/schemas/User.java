@@ -6,6 +6,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
 import javax.validation.constraints.NotBlank;
 
 import org.springframework.lang.Nullable;
@@ -16,6 +17,7 @@ import lombok.Data;
 
 @Entity
 @Data
+@Table(name = "user")
 public class User implements Serializable {
 
 	private static final long serialVersionUID = 2523844132897482398L;
